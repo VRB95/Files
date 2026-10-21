@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Files: Debug x64",
+            "type": "winapp",
+            "request": "launch",
+            "preLaunchTask": "Files: Build Debug x64",
+            "inputFolder": "${workspaceFolder}/src/Files.App/bin/x64/Debug/net10.0-windows10.0.26100.0/win-x64/VSCodeAppX",
+            "manifest": "${workspaceFolder}/src/Files.App/bin/x64/Debug/net10.0-windows10.0.26100.0/win-x64/VSCodeAppX/AppxManifest.xml",
+            "debuggerType": "coreclr",
+            "workingDirectory": "${workspaceFolder}"
+        },
+        {
+            "name": "Files: Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}",
+            "justMyCode": true
+        }
+    ]
+}

@@ -35,6 +35,14 @@ namespace Files.App.Data.Contracts
 		/// </summary>
 		List<string>? TabsOnStartupList { get; set; }
 
+		List<string>? LeftPaneFavoriteApps { get; set; }
+
+		List<string>? RightPaneFavoriteApps { get; set; }
+
+		List<string>? LeftPaneFavoriteFolders { get; set; }
+
+		List<string>? RightPaneFavoriteFolders { get; set; }
+
 		/// <summary>
 		/// A list containing all paths to tabs closed on last session.
 		/// </summary>

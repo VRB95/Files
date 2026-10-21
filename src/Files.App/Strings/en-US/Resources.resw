@@ -4752,4 +4752,25 @@
   <data name="SearchForQuery" xml:space="preserve">
     <value>Search for `{0}`</value>
   </data>
+  <data name="FavoriteApps" xml:space="preserve">
+    <value>Favorites</value>
+  </data>
+  <data name="AddFavoriteApp" xml:space="preserve">
+    <value>Add app shortcut</value>
+  </data>
+  <data name="FavoriteAppsFileFilter" xml:space="preserve">
+    <value>Applications and shortcuts</value>
+  </data>
+  <data name="FavoriteAppLaunchErrorTitle" xml:space="preserve">
+    <value>Couldn't open shortcut</value>
+  </data>
+  <data name="FavoriteAppLaunchErrorMessage" xml:space="preserve">
+    <value>Check that the app, folder, or shortcut still exists and that you have permission to open it.</value>
+  </data>
+  <data name="AddFavoriteShortcut" xml:space="preserve">
+    <value>Add shortcut</value>
+  </data>
+  <data name="AddFavoriteFolder" xml:space="preserve">
+    <value>Add folder shortcut</value>
+  </data>
 </root>

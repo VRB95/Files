@@ -47,6 +47,30 @@ namespace Files.App.Services.Settings
 			set => Set(value);
 		}
 
+		public List<string>? LeftPaneFavoriteApps
+		{
+			get => Get<List<string>>(null);
+			set => Set(value);
+		}
+
+		public List<string>? RightPaneFavoriteApps
+		{
+			get => Get<List<string>>(null);
+			set => Set(value);
+		}
+
+		public List<string>? LeftPaneFavoriteFolders
+		{
+			get => Get<List<string>>(null);
+			set => Set(value);
+		}
+
+		public List<string>? RightPaneFavoriteFolders
+		{
+			get => Get<List<string>>(null);
+			set => Set(value);
+		}
+
 		public List<string>? LastSessionTabList
 		{
 			get => Get<List<string>>(null);
