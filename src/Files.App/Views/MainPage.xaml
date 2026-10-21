@@ -179,6 +179,7 @@
 							MinHeight="100" />
 						<RowDefinition Height="Auto" />
 						<RowDefinition x:Name="InfoPaneRowDefinition" Height="Auto" />
+						<RowDefinition Height="Auto" />
 					</Grid.RowDefinitions>
 					<Grid.ColumnDefinitions>
 						<ColumnDefinition
@@ -189,18 +190,6 @@
 						<ColumnDefinition x:Name="InfoPaneColumnDefinition" Width="Auto" />
 						<ColumnDefinition x:Name="ShelfPaneColumn" Width="Auto" />
 					</Grid.ColumnDefinitions>
-
-					<!--  File Navigation Toolbar  -->
-					<uc:Toolbar
-						x:Name="InnerNavigationToolbar"
-						Grid.Row="0"
-						Grid.ColumnSpan="3"
-						Margin="0,0,0,4"
-						x:Load="False"
-						Loaded="NavToolbar_Loaded"
-						ShowPreviewPaneButton="{x:Bind ViewModel.ShouldPreviewPaneBeDisplayed, Mode=OneWay}"
-						TabIndex="2"
-						Visibility="{x:Bind ViewModel.ShowToolbar, Mode=OneWay}" />
 
 					<InfoBar
 						x:Name="NetworkDiscoveryInfoBar"
@@ -260,11 +249,23 @@
 						Loaded="PreviewPane_Loaded"
 						Unloaded="PreviewPane_Unloaded" />
 
+					<!--  File Navigation Toolbar  -->
+					<uc:Toolbar
+						x:Name="InnerNavigationToolbar"
+						Grid.Row="5"
+						Grid.ColumnSpan="3"
+						Margin="0,4,0,0"
+						x:Load="False"
+						Loaded="NavToolbar_Loaded"
+						ShowPreviewPaneButton="{x:Bind ViewModel.ShouldPreviewPaneBeDisplayed, Mode=OneWay}"
+						TabIndex="2"
+						Visibility="{x:Bind ViewModel.ShowToolbar, Mode=OneWay}" />
+
 					<!--  Shelf Pane  -->
 					<uc:ShelfPane
 						x:Name="ShelfPane"
 						Grid.Row="0"
-						Grid.RowSpan="5"
+						Grid.RowSpan="6"
 						Grid.Column="3"
 						Margin="4,0,0,0"
 						x:Load="{x:Bind ViewModel.ShowShelfPane, Mode=OneWay}"
